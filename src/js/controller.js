@@ -123,6 +123,10 @@ async function controlAddRecipe(newRecipe) {
 //   recipeView.addHendlerRender(controlRecipe);
 // })();
 
+function newFeature() {
+  console.log('New Feature Added');
+}
+
 function init() {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHendlerRender(controlRecipe);
@@ -131,5 +135,6 @@ function init() {
   searchView.addHendlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 }
 init();
